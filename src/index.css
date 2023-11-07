@@ -1,0 +1,222 @@
+.appAll {
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.titlePlusDarkmode {
+    display: flex;
+    justify-content: space-around;
+}
+
+#light {
+    background-color: #80CBC4;
+}
+
+#dark {
+    background-color: black;
+}
+
+h1 {
+    margin: 0;
+    color: black;
+}
+
+/* SWITHC */
+.switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#light .switch label {
+    color: black
+}
+
+#dark .switch label {
+    color: white
+}
+
+#dark h1 {
+    color: white;
+}
+
+#dark .form {
+    background-color: white;
+}
+
+#dark .search {
+    background-color: white;
+}
+
+#dark tr:nth-child(odd) {
+    background-color: black;
+    color: white;
+}
+
+#dark tr:nth-child(even) {
+    background-color: white;
+}
+
+/* #dark .delButton {
+    background-color: black;
+    color: white;
+}
+
+#dark .editButton {
+    background-color: black;
+    color: white;
+} */
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    color: black;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #B2DFDB;
+}
+
+tr:hover {
+    background-color: #009688;
+}
+
+/* DEL BUTTON */
+
+.delButton {
+    background-color: white;
+    border-radius: 8px;
+    border-color: red;
+    color: black;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.5s
+}
+
+.delButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.delButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 80px;
+    transition: 1s;
+}
+
+.delButtontton:hover span {
+    padding-right: 0px;
+}
+
+.delButton:hover span:after {
+    opacity: 1;
+    right: -10px;
+}
+
+.delButton:hover {
+    background-color: red;
+    color: black;
+}
+
+/* EDIT BUTTON */
+
+.editButton {
+    background-color: white;
+    border-radius: 8px;
+    border-color: yellow;
+    color: black;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.editButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.editButton span:after {
+    content: '\270F';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 40px;
+    transition: 1s;
+}
+
+.editButton:hover span {
+    padding-right: 0px;
+}
+
+.editButton:hover span:after {
+    opacity: 1;
+    right: -20px;
+}
+
+.editButton:hover {
+    background-color: yellow;
+    color: black;
+}
+
+/* FORM AND SEARCH */
+
+.form {
+    background-color: #4DB6AC;
+    color: black;
+    border-radius: 5px;
+    width: 30%;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.formRow {
+    display: flex;
+    justify-content: space-between;
+    margin: 3px;
+
+}
+
+.search {
+    background-color: #4DB6AC;
+    color: black;
+    border-radius: 5px;
+    width: 350px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 70px;
+}
+
+.searchandadd {
+    display: flex;
+}
